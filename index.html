@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Percobaan website Syuja</title>
+    <script>
+        function submitForm() {
+            var nama = document.getElementById("nama").value;
+            document.getElementById("hasil").innerHTML = "Halo, " + nama + ", ini adalah website percobaan dari Syuja, saya harap kamu memaklumi" ;
+            
+
+            return false;
+            
+        }
+    </script>
+</head>
+<body>
+    <h1>Percobaan #1</h1>
+    <form onsubmit="return submitForm()">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+        <input type="submit" value="Kirim">
+    </form>
+
+    <p id="hasil"></p>
+</body>
+</html>
